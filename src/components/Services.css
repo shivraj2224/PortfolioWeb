@@ -1,0 +1,91 @@
+.services {
+  font-family: sans-serif;
+  padding: 80px 0;
+  color: #fff;
+  background-color: #111;
+}
+
+.services h2 {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.services h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.services h2::after {
+  content: "What I provide";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.services__main {
+  margin: auto 40px auto 40px;
+}
+
+.service__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Card Styling */
+
+.card {
+  width: calc(33% - 20px);
+  background-color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+.card .box {
+  transition: all 0.3sec ease;
+}
+
+.card .box:hover {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  background-color: crimson;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .card {
+    width: 100%;
+  }
+}

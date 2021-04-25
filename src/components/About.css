@@ -1,0 +1,159 @@
+.about {
+  font-family: sans-serif;
+  padding: 80px 0;
+}
+
+.about h2 {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.about h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.about h2::after {
+  content: "Who I am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.about .about__main {
+  margin: auto 40px auto 40px;
+}
+
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__contentLeft {
+  width: 40%;
+}
+
+.about__contentLeft img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 15px;
+}
+
+.about__contentRight {
+  width: 60%;
+}
+
+.about__text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about__text span {
+  color: crimson;
+}
+
+.about__contentRight p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.about__contentRight a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: crimson;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 27px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.about__contentRight a:hover {
+  background: none;
+  color: crimson;
+}
+
+@media (max-width: 1200px) {
+  .about__contentLeft img {
+    height: 350px;
+    width: 350px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .about__contentLeft {
+    width: 50%;
+  }
+  .about__contentLeft img {
+    height: 350px;
+    width: 350px;
+    margin-right: 10px;
+  }
+
+  .about__contentRight {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__main {
+    width: auto;
+  }
+
+  .about__content {
+    width: 100%;
+  }
+
+  .about__contentLeft {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about__contentRight {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about__main {
+    width: auto;
+  }
+
+  .about__content {
+    width: 100%;
+  }
+
+  .about__contentLeft {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about__contentRight {
+    flex: 100%;
+  }
+}

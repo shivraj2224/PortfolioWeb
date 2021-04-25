@@ -1,0 +1,146 @@
+.skills {
+  font-family: sans-serif;
+  padding: 80px 0;
+}
+
+.skills h2 {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.skills h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.skills h2::after {
+  content: "What I Know";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.skills__main {
+  margin: auto 40px auto 40px;
+}
+
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills__contentLeft {
+  width: calc(50% - 30px);
+}
+
+.skills__contentLeft .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills__contentLeft p {
+  text-align: justify;
+}
+
+.skills__contentLeft a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: crimson;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.skills__contentLeft a:hover {
+  background: none;
+  color: crimson;
+}
+
+.skills__contentRight {
+  width: calc(50% - 30px);
+}
+
+.skills__contentRight .bars {
+  margin-bottom: 15px;
+}
+
+.skills__contentRight .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skills__contentRight {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.skills__contentRight .line {
+  height: 5px;
+  width: 100%;
+  background-color: lightgrey;
+  position: relative;
+}
+
+.skills__contentRight .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: crimson;
+}
+
+.skills__contentRight .react::before {
+  width: 70%;
+}
+
+.skills__contentRight .css::before {
+  width: 75%;
+}
+
+.skills__contentRight .javascript::before {
+  width: 60%;
+}
+
+.skills__contentRight .python::before {
+  width: 55%;
+}
+
+.skills__contentRight .c::before {
+  width: 65%;
+}
+
+@media (max-width: 690px) {
+  .skills__contentLeft {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .skills__contentRight {
+    width: 100%;
+  }
+}
